@@ -1,0 +1,79 @@
+.earningPage {
+    .customTabs {
+        margin-bottom: 30px;
+    }
+    .yearSelect  {
+        width: 135px;
+        margin-right: 20px;
+        .ant-form-item{
+            margin-bottom: 0;
+        }
+        .ant-select-selector{
+            .ant-select-selection-item, .ant-select-selection-placeholder{
+                color: color(50) !important;
+            }
+        }
+        .select2{
+            &.select2-container{
+                .select2-selection.select2-selection--single{
+                    .select2-selection__rendered, .select2-selection__placeholder{
+                        color: color(50);
+                    }
+                }
+            }
+        }
+    }
+    .nav-tabs {
+        padding: 3px;
+        background: color(820);
+        border-radius: 10px;
+        margin-left: 20px;
+    }
+    .nav-link {
+        margin-bottom: 0;
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        color: color(350);
+        padding:14px 17px;
+        @include flexcenter("both");
+
+        &.active {
+            background-color: color(500); color: color(900);
+        }
+    }
+
+    @include media-breakpoint-down(xl){
+        .btn {
+            em { margin-right: 5px; font-size: 16px;}
+        }
+        .nav-tabs {
+            margin-left: 10px;
+        }
+        .nav-link { padding-top: 12px; padding-bottom: 12px;}
+    }
+    @include media-breakpoint-down(lg) {
+        .tabBar {
+            margin-top: 15px;
+        }
+        .yearSelect {
+            width: 100px;
+            margin-right: 10px;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        .customTabs { margin-bottom: 0;}
+        .earningGraph { min-height: 350px;}
+        .nav-link { padding-top: 10px; padding-bottom: 10px;}
+    }
+    @include media-breakpoint-down(sm) {
+        .yearSelect {
+            padding-bottom: 10px; width: 100%; margin-right: 0;
+        }
+        .dateRangepicker  {
+            width: 100%;
+            .form-control-wrap { width: 50%;}
+        } 
+    }  
+     
+}

@@ -1,0 +1,136 @@
+.faq {
+  .pt-110 {
+    padding-top: 110px;
+    @include media-breakpoint-down(lg) {
+      padding: 15px;
+    }
+  }
+  .pageHeading {
+    background-image: url($imageurl + "/header-left-img.png"),
+      url($imageurl + "/header-right-img-faq.png");
+    @include media-breakpoint-down(sm){
+        background-size: 150px, 180px;
+    }  
+  }
+
+  .makeup {
+    position: relative;
+    .content {
+      margin: 30px 0;
+    }
+    &::after {
+      content: "";
+      display: block;
+      height: 352px;
+      width: 251px;
+      background-image: url($imageurl + "/pattern.png");
+      background-size: contain;
+      position: absolute;
+      right: 0;
+      top: 50%;
+    }
+    @include media-breakpoint-down(lg) {
+      &::after {
+        content: "";
+        display: block;
+        height: 180px;
+        width: 130px;
+        background-image: url($imageurl + "/pattern.png");
+        background-size: contain;
+        position: absolute;
+        right: 0;
+        pointer-events: none;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      min-height: auto;
+      &::after {
+        display: none;
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      .container {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .accordion-button:not(.collapsed)::after {
+    background-image: url($imageurl + "/min.svg") !important;
+    transform-origin: center top;
+    transform: translate(0px, 11px) rotate(180deg);
+  }
+  .accordion-button::after {
+    background-image: url($imageurl + "/plus.svg") !important;
+  }
+  .customFaq {
+    text-align: left;
+    .accordion {
+      &-item {
+        background: transparent;
+        border-width: 0px;
+        *{
+          font-family: font(rg) !important;
+          word-break: break-word;
+        }
+      }
+      &-button {
+        padding-left: 0;
+        padding-right: 0;
+        background: transparent;
+        color: color(400);
+        font-family: font(sb) !important;
+        font-size: 20px;
+        border: none;
+        box-shadow: none;
+        ::after {
+          background-image: url($imageurl + "/plus.svg") !important;
+        }
+        :not(.collapsed) {
+          ::after {
+            background-image: url($imageurl + "/min.svg") !important;
+          }
+        }
+      }
+      &-body {
+        padding: 0rem 0rem 1rem 0rem;
+        p {
+          color: color(300);
+          font-size: 18px;
+          line-height: 36px;
+        }
+      }
+    }
+
+    @include media-breakpoint-down(xxl) {
+      .accordion {
+        &-button {
+          font-size: 16px;
+        }
+        &-body {
+          padding: 0rem 0rem 1rem 0rem;
+          p {
+            color: color(300);
+            font-size: 14px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+    @include media-breakpoint-down(xxl) {
+      .accordion {
+        &-button {
+          font-size: 14px;
+          &::after {
+            height: 1rem;
+            width: 1rem;
+            background-size: contain;
+          }
+        }
+      }
+    }
+  }
+}

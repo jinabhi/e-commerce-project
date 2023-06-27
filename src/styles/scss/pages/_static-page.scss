@@ -1,0 +1,45 @@
+.static-page{
+    h1,h2,h3,h4,h5,h6{
+        font-size: 20px;
+        color: color(50);
+        font-family: font(md);
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+    h4{
+        font-size: 16px;
+    }
+    p{
+        font-size: 16px;
+        color: color(300);
+        font-family: font(rg);
+        line-height: 22px;
+        margin-bottom: 25px;
+        *{
+            font-family: font(rg) !important;
+        }
+    }
+    @include media-breakpoint-down(lg){
+        h1,h2,h3,h4,h5,h6{
+            font-size: 16px;
+            line-height: 18px;
+            margin-bottom: 10px;
+        }
+        h4{
+            font-size: 14px;
+        }
+        p{
+            font-size: 14px;
+            margin-bottom: 7px;
+            line-height: 18px;
+        }
+    }
+    @include media-breakpoint-down(md){
+        h4{
+            font-size: 13px;
+        }
+        p{
+            font-size: 13px;
+        }
+    }
+}

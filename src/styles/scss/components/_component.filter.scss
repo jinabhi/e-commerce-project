@@ -1,0 +1,51 @@
+.filter {
+    h2 {
+        font-size: 22px; color: color(50); font-family: font(bd);
+    }
+    .dropdown-toggle {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #2d2d2d;
+        padding: 0;
+        color: color(300); border: none;
+        &::after { display: none;}
+        span{line-height: 50px;}
+    }
+    &_dropdownMenu {
+        min-width: 500px; max-width: 500px; border-radius: 15px;
+        padding: 20px; background-color: color(360);
+    } 
+    .form-control-wrap {
+        .form-control  {
+            border-radius: 15px !important;
+        }
+        .input-group-addon {
+            color: color(350); margin-right: 5px;
+        }
+    }
+    @include media-breakpoint-down(xl) { 
+        h2 {
+            font-size: 18px;
+        }
+        .dropdown-toggle {
+            width: 45px;
+            height: 45px;
+        }
+    }
+    @include media-breakpoint-down(md) { 
+        h2 {
+            font-size: 16px;
+        }
+        .dropdown-toggle {
+            width: 40px;
+            height: 40px;
+            span{line-height: 42px;}
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        &_dropdownMenu { 
+            min-width: 300px;
+        }
+    }
+}

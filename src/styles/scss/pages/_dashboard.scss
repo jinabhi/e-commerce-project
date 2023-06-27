@@ -1,0 +1,114 @@
+.dashboardPage {
+  .ant-select-selection-placeholder,
+  .ant-select-selection-item {
+    color: color(50) !important;
+  }
+  &_sets {
+    padding-top: 30px;
+    .setBox {
+      padding: 20px;
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      &_icon {
+        margin-top: -10px;
+        text-align: right;
+      }
+      &_info {
+        p {
+          color: color(300);
+          line-height: 19px;
+          margin-bottom: 8px;
+        }
+        h2 {
+          font-size: 30px;
+          line-height: 37px;
+          font-family: font(sb);
+          color: color(50);
+          margin: 0;
+        }
+      }
+    }
+  }
+  &_charts {
+    .card {
+      padding: 20px;
+    }
+    .select2 {
+      &.select2-container {
+        .select2-selection.select2-selection--single {
+          .select2-selection__rendered,
+          .select2-selection__placeholder {
+            color: color(50);
+          }
+        }
+      }
+    }
+  }
+  &_traffic {
+    .trafficSource {
+      padding: 30px;
+    }
+  }
+  @include media-breakpoint-down(xxl) {
+    // padding-top: 20px;
+    .setBox {
+      padding: 15px;
+      &_info {
+        h2 {
+          font-size: 25px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+  @include media-breakpoint-down(xl) {
+    // padding-top: 15px;
+    .setBox {
+      padding: 15px;
+      &_icon {
+        img {
+          max-width: 40px;
+        }
+      }
+      &_info {
+        h2 {
+          font-size: 22px;
+          line-height: 26px;
+        }
+      }
+    }
+    &_traffic {
+      .trafficSource {
+        padding: 20px;
+      }
+    }
+  }
+  @include media-breakpoint-down(md) {
+    .setBox {
+      &_icon {
+        img {
+          max-width: 30px;
+        }
+      }
+      &_info {
+        h2 {
+          font-size: 18px;
+          line-height: 24px;
+        }
+      }
+    }
+    .dateRangepicker {
+      margin-top: 10px;
+      width: 100%;
+      .form-control-wrap {
+        width: 50%;
+      }
+    }
+    &_traffic {
+      .trafficSource {
+        padding: 15px;
+      }
+    }
+  }
+}

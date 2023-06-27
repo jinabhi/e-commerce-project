@@ -1,0 +1,11 @@
+export { default as Register } from "./Register/index";
+export { default as SellerMedia } from "./SellerMedia/index";
+export { default as SellerAuth } from "./Auth/index";
+export { default as SellerAccount } from "./Account/index";
+export { default as SellerProduct } from "./SellerProduct/index";
+export { default as SellerDiscountOffer } from "./DiscountsOffers/index";
+export { default as MorInventory } from "./MorInventory/index";
+export { default as MyStore } from "./MyStore/index";
+export { default as SellerManageCms } from "./ManageCms/index";
+export { default as Earnings } from "./Earnings/index";
+export { default as SellerDashboard } from "./Dashboard/index";

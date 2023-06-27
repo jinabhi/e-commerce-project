@@ -1,0 +1,27 @@
+.customerDetail {
+    .category {
+        // img { height: 80px;object-fit: cover;}
+        &_title { font-size: 12px; color: #000; }
+    }
+    .common-table .table td, .common-table .table th {
+        padding: 20px;
+    }
+
+    .starRating {
+        li {
+            font-size: 26px;
+            &:not(:last-child) {
+                margin-right: 5px;
+            }
+        }
+    }
+    .reviewBox {
+        &_title { font-size: 18px;}
+        &_date {
+            font-size: 14px;
+        }
+        &_comment {
+            font-size: 16px;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+.breadCrumbNav{
+    padding: 35px 0;
+    .breadcrumb{
+        margin-bottom: 0;
+        &-item{
+            a{
+                color: color(500);
+                font-size: 20px;
+                font-family: font(sb);
+            }
+            &.active{
+                font-size: 20px;
+                font-family: font(sb);
+                color: color(50);
+            }
+            +.breadcrumb-item{
+                padding: 0;
+                &:before{
+                    content:"\e91b";
+                    font-family: 'icomoon';
+                    padding: 0 15px;
+                    color: color(500);
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    @media (max-width: 1599px) {
+        padding: 25px 0;
+        .breadcrumb{
+            &-item{
+                a{
+                    font-size: 18px;
+                }
+                &.active{
+                    font-size: 18px;
+                }
+                +.breadcrumb-item{
+                    &:before{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(lg){
+        padding: 20px 0;
+        .breadcrumb{
+            &-item{
+                a{
+                    font-size: 16px;
+                }
+                &.active{
+                    font-size: 16px;
+                }
+                +.breadcrumb-item{
+                    &:before{
+                        padding: 0 10px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+.about {
+  .pt-110 {
+    padding-top: 110px;
+    @include media-breakpoint-down(lg) {
+      padding: 15px;
+    }
+  }
+
+  .pageHeading {
+    background-image: url($imageurl + "/header-left-img.png"),
+      url($imageurl + "/header-right-img-about.png");
+  }
+  .aboutContent {
+    position: relative;
+    .content {
+      margin: 30px 0;
+    }
+    &::after {
+      content: "";
+      display: block;
+      height: 352px;
+      width: 251px;
+      background-image: url($imageurl + "/pattern.png");
+      background-size: contain;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      pointer-events: none;
+    }
+    @include media-breakpoint-down(lg) {
+      &::after {
+        content: "";
+        display: block;
+        height: 180px;
+        width: 130px;
+        background-image: url($imageurl + "/pattern.png");
+        background-size: contain;
+        position: absolute;
+        right: 0;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      min-height: auto;
+      &::after {
+        display: none;
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      .container {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+export const text = {
+  banner: "Banner",
+  description: "Description",
+  bannerImage: "Banner Image",
+  title: "Title",
+  name: "Name",
+  status: "Status",
+  add: "Add New Banner",
+  image: "Banner Image",
+  bannerName: "Banner Name",
+  bannerTitle: "Banner Title ",
+  bannerDescription: "Banner Description",
+  bannerNamePlaceholder: "Enter Banner Name",
+  titlePlaceholder: "Enter Banner Title",
+  descriptionPlaceholder: "Enter Banner Description",
+  deleteMassage: "Want to delete?",
+};

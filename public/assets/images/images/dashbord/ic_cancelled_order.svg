@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="47.573" height="60" viewBox="0 0 47.573 60">
+  <g id="ic_cancelled_order" transform="translate(-52.789)">
+    <g id="Group_57175" data-name="Group 57175" transform="translate(52.789)">
+      <g id="Group_57174" data-name="Group 57174" transform="translate(0)">
+        <path id="Path_75325" data-name="Path 75325" d="M100.565,49.479,97.886,15.715A4.22,4.22,0,0,0,93.7,11.836H88.4V11.6a11.6,11.6,0,1,0-23.2,0v.238H59.917a4.219,4.219,0,0,0-4.188,3.875l-2.68,33.773A9.77,9.77,0,0,0,62.789,60H90.824a9.77,9.77,0,0,0,9.741-10.521ZM68.723,11.6a8.083,8.083,0,1,1,16.167,0v.238H68.723Zm26.69,42.883a6.191,6.191,0,0,1-4.589,2H62.79a6.255,6.255,0,0,1-6.237-6.729l2.68-33.773a.689.689,0,0,1,.684-.634h5.292v4.328a1.757,1.757,0,0,0,3.514,0V15.35H84.89v4.328a1.757,1.757,0,1,0,3.514,0V15.35H93.7a.69.69,0,0,1,.684.638l2.679,33.763A6.191,6.191,0,0,1,95.413,54.481Z" transform="translate(-53.02)" fill="#4ec400"/>
+        <g id="Group_57180" data-name="Group 57180" transform="translate(18.007 31.309)">
+          <path id="Path_75327" data-name="Path 75327" d="M11.568,0,6.146,5.157,0,11" transform="matrix(1, -0.017, 0.017, 1, 0.001, 0.202)" fill="none" stroke="#4ec400" stroke-linecap="round" stroke-width="3.5"/>
+          <path id="Path_75328" data-name="Path 75328" d="M11.569,11,6.146,5.844,0,0" transform="matrix(-1, -0.017, 0.017, -1, 11.568, 11.202)" fill="none" stroke="#4ec400" stroke-linecap="round" stroke-width="3.5"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

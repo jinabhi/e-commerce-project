@@ -1,0 +1,523 @@
+.authPage {
+  .pwdiconEnd {
+    color: color(300);
+    position: absolute;
+    top: 16px;
+    right: 15px;
+  }
+  .ant-tag {
+    color: color(50);
+    &-checkable {
+      &:active {
+        color: #c8a452;
+        background-color: transparent;
+      }
+      &:not(.ant-tag-checkable-checked) {
+        &:hover {
+          color: color(50);
+        }
+      }
+    }
+    font-size: 16px !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    &-checkable-checked {
+      background-color: transparent;
+      .customCheckbox {
+        label {
+          color: #c8a452;
+          border-color: #c8a452;
+        }
+      }
+    }
+  }
+  .category-picker {
+    label {
+      span {
+        font-size: 16px;
+      }
+    }
+  }
+  text-align: left;
+  // .profile {
+  .profile {
+    margin-bottom: 10px;
+    & > label {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      input {
+        height: 0;
+        width: 0;
+        opacity: 0;
+      }
+    }
+    .ant-upload-picture-card-wrapper{
+      height: 150px;
+      width: 150px;
+      position: relative;
+      margin: 0 auto;
+      position: relative;
+    }
+    &_img {
+      img + .filelabel {
+        width: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+        background: color(840);
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        input {
+          display: none;
+        }
+        em {
+          color: color(350);
+          background-color: transparent !important;
+        }
+        &-license {
+          width: 58px;
+          height: 58px;
+          bottom: 25px;
+          left: auto;
+          right: 25px;
+          em {
+            color: color(50);
+            font-size: 22px;
+          }
+        }
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        border-radius: 100%;
+      }
+    }
+    @include media-breakpoint-down(md){
+      .ant-upload-picture-card-wrapper{
+        height: 120px;
+        width: 120px;
+      }
+      &_img {
+        img + .filelabel {
+          width: 32px;
+          height: 32px;
+          bottom: 10px;
+          right: 10px;
+        }
+      }
+    }
+  }
+  .uploadStuff{
+    &_upload{
+      .ant-upload{
+        justify-content: start;
+      }
+    }
+  }
+  .back-icon {
+    display: flex;
+    left: 100px;
+    top: 80px;
+    color: #fff;
+    position: absolute;
+    em {
+      font-size: 25px;
+    }
+  }
+  &_left {
+    position: relative;
+    &-img {
+      &.passwordImg {
+        margin-top: -150px;
+      }
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      background-image: url("#{$imageurl}/auth-side.svg");
+      width: 100%;
+      height: 370px;
+      left: 0;
+      bottom: 120px;
+      z-index: -1;
+      opacity: 1;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+  &_right {
+    padding: 70px 100px 45px;
+    background-color: color(850);
+    height: 100%;
+    overflow: auto;
+    .select-img {
+      img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+    }
+    .authHeader {
+      margin-bottom: 80px;
+      h1 {
+        font-size: 42px;
+        line-height: 52px;
+        font-family: font(sb);
+        margin-bottom: 15px;
+        color: color(50);
+      }
+      p {
+        color: color(300);
+      }
+      h5 {
+        font-size: 18px;
+        line-height: 22px;
+        font-family: font(sb);
+      }
+      h6 {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+    .formAction {
+      padding: 50px 0;
+      p {
+        color: color(100);
+        font-size: 14px;
+        line-height: 18px;
+        a {
+          font-family: font(md);
+        }
+      }
+    }
+    .icon-camera {
+      font-size: 22px;
+      // margin-bottom: 10px;
+      display: block;
+    }
+    .edit-icon {
+      em {
+        font-size: 14px;
+        margin-left: 10px;
+      }
+    }
+    .userInput {
+      margin-top: 30px;
+      margin-bottom: 45px;
+      .form-control {
+        margin-right: 20px;
+        height: 80px;
+        width: 80px;
+        font-size: 35px;
+      }
+    }
+    .otp-timer {
+      color: color(300);
+      em {
+        margin-right: 10px;
+      }
+    }
+    .passwordInfo {
+      p {
+        margin-bottom: 5px;
+        em {
+          font-size: 10px;
+        }
+      }
+    }
+    .customCheckbox {
+      margin-bottom: 0px;
+      label {
+        margin-bottom: 15px;
+        padding: 15px 20px;
+        background: color(830);
+        border-radius: 10px;
+        margin-right: 10px;
+        border: 1px solid transparent;
+        cursor: pointer;
+
+        span {
+          font-size: 30px;
+          margin-right: 12px;
+        }
+      }
+      input[type="checkbox"].customCheckbox-input {
+        display: none;
+      }
+      input[type="checkbox"].customCheckbox-input:checked
+        + label.customCheckbox-label {
+        color: color(500);
+        border-color: color(500);
+      }
+    }
+  }
+  &_step {
+    margin: 50px 0;
+    .progressStep {
+      display: flex;
+      margin: 0 auto;
+      justify-content: space-between;
+      overflow: hidden;
+      li {
+        position: relative;
+        z-index: 1;
+        &:not(:last-child) {
+          &:after {
+            content: "";
+            width: 100vw;
+            position: absolute;
+            border: 1px solid color(370);
+            left: 0;
+            top: 50%;
+            z-index: -1;
+          }
+        }
+        span {
+          width: 60px;
+          height: 60px;
+          display: inline-block;
+          border: 2px solid color(370);
+          background-color: color(850);
+          border-radius: 50%;
+          text-align: center;
+          line-height: 55px;
+          color: color(300);
+          font-family: font(md);
+          font-size: 25px;
+        }
+        &.active {
+          span {
+            color: color(850);
+            background: color(500);
+            border-color: color(500);
+          }
+        }
+        &.is-done {
+          &:after {
+            border-color: color(500);
+          }
+          span {
+            color: color(850);
+            background: color(500);
+            border-color: color(500);
+          }
+        }
+      }
+    }
+  }
+  &_cnt {
+    fieldset {
+      &:not(:first-of-type) {
+        display: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1699px) {
+    &_left {
+      &::after {
+        height: 250px;
+        bottom: 80px;
+      }
+      &-img {
+        max-width: 500px;
+      }
+    }
+    &_right {
+      padding: 55px 80px 45px;
+    }
+  }
+  @media screen and (max-width: 1599px) {
+    .back-icon {
+      top: 55px;
+      left: 80px;
+    }
+    &_right {
+      padding: 45px 60px 45px;
+      .authHeader {
+        margin-bottom: 50px;
+        h1 {
+          font-size: 32px;
+          line-height: 42px;
+        }
+      }
+      .customCheckbox {
+        label {
+          padding: 15px;
+          margin-bottom: 10px;
+          span {
+            font-size: 26px;
+          }
+        }
+      }
+    }
+    &_step {
+      margin: 40px 0;
+      .progressStep {
+        li {
+          span {
+            width: 50px;
+            height: 50px;
+            line-height: 45px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  @include media-breakpoint-down(xxl) {
+    .back-icon {
+      top: 40px;
+      left: 60px;
+    }
+    &_left {
+      &:after {
+        height: 180px;
+        bottom: 40px;
+      }
+      &-img {
+        max-width: 400px;
+      }
+      &-logo {
+        max-width: 180px;
+      }
+    }
+    &_right {
+      padding: 35px 40px 35px;
+      .authHeader {
+        margin-bottom: 40px;
+        h1 {
+          font-size: 28px;
+          line-height: 34px;
+          margin-bottom: 10px;
+        }
+        h5 {
+          font-size: 16px;
+        }
+      }
+      .formAction {
+        padding: 35px 0;
+      }
+      .userInput {
+        margin-bottom: 30px;
+        .form-control {
+          height: 60px;
+          width: 60px;
+          font-size: 25px;
+        }
+      }
+    }
+    &_step {
+      margin: 25px 0;
+    }
+  }
+  @include media-breakpoint-down(xl) {
+    .back-icon {
+      top: 35px;
+      left: 35px;
+      em {
+        font-size: 20px;
+      }
+    }
+    &_left {
+      &-img {
+        max-width: 350px;
+      }
+      &-logo {
+        max-width: 150px;
+      }
+    }
+    &_right {
+      padding: 35px;
+      .authHeader {
+        margin-bottom: 40px;
+        h1 {
+          font-size: 22px;
+          line-height: 26px;
+          margin-bottom: 4px;
+        }
+        h5,
+        h6 {
+          font-size: 14px;
+        }
+      }
+      .formAction {
+        padding: 25px 0;
+      }
+      .userInput {
+        .form-control {
+          height: 45px;
+          width: 45px;
+          font-size: 20px;
+        }
+      }
+      .customCheckbox {
+        label {
+          padding: 12px;
+          font-size: 14px;
+          span {
+            font-size: 22px;
+          }
+        }
+      }
+      .link {
+        font-size: 14px;
+      }
+      .passwordInfo {
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+    &_step {
+      margin: 15px 0;
+      .progressStep {
+        li {
+          span {
+            width: 40px;
+            height: 40px;
+            line-height: 35px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    background-color: color(850);
+    .back-icon {
+      em {
+        font-size: 16px;
+      }
+    }
+    &_right {
+      padding: 20px;
+      max-width: 550px;
+      margin: 0 auto;
+      .authHeader {
+        margin-bottom: 25px;
+        h1 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    &_right {
+      padding: 15px;
+      .authHeader {
+        h1 {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

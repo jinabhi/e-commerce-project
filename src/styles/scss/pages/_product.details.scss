@@ -1,0 +1,149 @@
+.productDetails {
+  &_images {
+    .imgBox {
+      img {
+        border-radius: 8px;
+      }
+    }
+  }
+  &_info {
+    .nav-tabs {
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 20px;
+      font-family: font(md);
+      line-height: 24px;
+      color: color(300);
+      white-space: pre-wrap;
+      &.list {
+        line-height: 40px;
+      }
+    }
+  }
+  &_reviews {
+    .rateBox {
+      margin-bottom: 30px;
+      h3 {
+        color: color(500);
+        font-size: 43px;
+        line-height: 53px;
+        font-family: font(sb);
+        margin: 0;
+      }
+      p {
+        font-size: 20px;
+        font-family: font(md);
+        line-height: 18px;
+        color: color(300);
+        margin: 0;
+      }
+      &_rating {
+        margin-top: 10px;
+      }
+    }
+    .allReview {
+      margin-top: 20px;
+    }
+  }
+  @include media-breakpoint-down(xxl) {
+    &_images {
+      .imgBox {
+        img {
+          max-width: 220px;
+        }
+      }
+    }
+    &_info {
+      .nav-tabs {
+        margin-bottom: 15px;
+      }
+      p {
+        font-size: 18px;
+        &.list {
+          line-height: 35px;
+        }
+      }
+    }
+  }
+  @include media-breakpoint-down(xl) {
+    &_reviews {
+      .rateBox {
+        margin-bottom: 20px;
+        h3 {
+          font-size: 35px;
+          line-height: 45px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    &_images {
+      .imgBox {
+        img {
+          max-width: 150px;
+        }
+      }
+    }
+    &_info {
+      p {
+        font-size: 16px;
+        &.list {
+          line-height: 30px;
+        }
+      }
+    }
+    &_reviews {
+      .rateBox {
+        h3 {
+          font-size: 30px;
+          line-height: 40px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  @include media-breakpoint-down(md) {
+    &_info {
+      p {
+        font-size: 14px;
+        &.list {
+          line-height: 25px;
+        }
+      }
+    }
+    &_reviews {
+      .rateBox {
+        &_rating {
+          margin-top: 6px;
+        }
+      }
+      .allReview {
+        margin-top: 10px;
+      }
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    &_images {
+      .imgBox {
+        img {
+          max-width: 100px;
+        }
+      }
+    }
+  }
+
+  .starRating {
+    li {
+      font-size: 26px;
+      &:not(:last-child) {
+        margin-right: 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+export const validation = {
+  firstName: "First name is required",
+  phoneNumber: "Mobile number is required",
+  profilePicture: "Profile picture is required",
+  valid: "Please enter valid mobile number",
+  short: "Mobile number must not be less than 6 digit",
+  long: "Mobile number must not be more than 12 digit",
+  validFirstName: "Please enter valid first name",
+  lastName: "Last name is required",
+  validLastName: "Please enter valid last name",
+  firstNameMin: "First name Must be more than 3 characters",
+  firstNameMax: "First name Must be less than 24 characters",
+  lastNameMin: "First name Must be more than 3 characters",
+  lastNameMax: "First name Must be less than 24 characters",
+};

@@ -1,0 +1,227 @@
+.commontable {
+  background-color: color(850);
+  padding: 30px;
+  border-radius: 20px;
+  .dataTables_length {
+    float: none !important;
+    text-align: inherit !important;
+    label {
+      display: inline-flex;
+      align-items: center;
+      color: color(350);
+      font-family: font(sb);
+    }
+    select {
+      min-width: 60px;
+      max-width: 60px;
+      color: color(350);
+      margin: 0 5px;
+      height: 40px;
+      background-position: right 5px center;
+      border: 2px solid color(360) !important;
+      background-color: color(850);
+      padding: 4px;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+  .dataTables_filter {
+    text-align: inherit !important;
+    float: none !important;
+    margin-top: 0 !important;
+    label{
+      width: 100%;
+      max-width: 250px;
+    }
+    .form-control {
+      padding: 8px 10px;
+      border-radius: 7px;
+      color: #fff;
+      margin-left: 0;
+      border: 2px solid color(360);
+      background-color: transparent;
+      &:focus {
+        border-color: color(500);
+      }
+    }
+  }
+  .dataTables_info {
+    font-family: font(sb);
+    color: color(350);
+  }
+  .dataTable {
+    thead {
+      .imageColumn {
+        width: 90px;
+      }
+      th {
+        line-height: 18px;
+        font-size: 14px;
+        color: color(50);
+        font-family: font(bd);
+        font-weight: 100;
+        border-bottom: 1px solid rgba(112, 112, 112, 0.2);
+        padding: 15px;
+        vertical-align: middle;
+        &:first-child {
+          padding-left: 0;
+        }
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+    tbody {
+      td {
+        font-size: 14px;
+        line-height: 18px;
+        font-family: font(rg);
+        padding: 12px 15px;
+        color: color(300);
+        vertical-align: middle;
+        border-bottom: 1px solid rgba(112, 112, 112, 0.2);
+        &:first-child {
+          padding-left: 0;
+        }
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+      .badge-danger {
+        &:hover {
+          color: #fc9c9c;
+        }
+      }
+    }
+  }
+  &_image {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .action {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    &_list:not(:last-child) {
+      border-bottom: 1px solid color(350);
+    }
+    &_link {
+      color: color(50);
+      font-size: 14px;
+      padding: 8px 10px;
+      display: block;
+      @include transition(0.3s);
+      &:hover {
+        color: color(500);
+      }
+    }
+  }
+  .actionDropdown {
+    &.dropdown {
+      position: static;
+      .dropdown-toggle {
+        color: color(300);
+        font-size: 18px;
+        border: 0;
+        width: 40px;
+        background: color(360);
+        height: 40px;
+        border-radius: 5px;
+
+        &::after {
+          display: none;
+        }
+      }
+      .dropdown-menu {
+        padding: 0px;
+        border-radius: 10px;
+        background-color: color(360);
+      }
+    }
+  }
+  .table_footer {
+    padding-top: 30px;
+  }
+  .dataTables_wrapper {
+    .dataTables_paginate {
+      .page-item,
+      .paginate_button {
+        a {
+          color: color(350) !important;
+          border: 1px solid transparent;
+          border-radius: 5px;
+          background: transparent;
+          padding: 8px 14px;
+          &:hover {
+            background: color(500);
+            color: color(850) !important;
+          }
+          &:focus {
+            box-shadow: none;
+          }
+        }
+        &.active {
+          a {
+            background: color(500);
+            color: color(850) !important;
+            &:hover {
+              background: color(500);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(xxl) {
+    padding: 20px;
+    border-radius: 15px;
+    .dataTable {
+      thead {
+        th:not(:last-child) {
+          white-space: nowrap;
+        }
+      }
+      tbody {
+        td:not(:last-child) {
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    padding: 15px;
+    border-radius: 10px;
+  }
+  @include media-breakpoint-down(md) {
+    .dataTable {
+      thead th {
+        padding: 10px;
+      }
+      tbody td {
+        padding: 10px;
+      }
+    }
+    .table_footer {
+      padding-top: 10px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    &_image {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+.datatable-wrap {
+  overflow: auto;
+}

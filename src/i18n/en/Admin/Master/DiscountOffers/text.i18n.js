@@ -1,0 +1,16 @@
+export const text = {
+  title: "Discounts",
+  discountHeading: "Discounts",
+  sellerName: "Seller Name",
+  discount: "Discount %",
+  noOfProduct: "No. of Products",
+  startDate: "Start Date",
+  endDate: "End Date",
+  SubCategoryName: "Sub Category",
+  childCategory: "Child Category",
+  seller: "Seller",
+  product: "Product",
+  startEnd: "Start & End",
+  category: "Category",
+  noProduct: "No Products Found",
+};

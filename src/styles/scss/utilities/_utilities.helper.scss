@@ -1,0 +1,101 @@
+.link {
+  color: color(500);
+  &:hover {
+    color: darken(color(500), $amount: 6%);
+  }
+}
+.toast-close-button {
+  display: none;
+}
+.font-md {
+  font-family: font(md);
+}
+.bg-850 {
+  background-color: color(850);
+}
+.radius-20 {
+  border-radius: 20px;
+  @include media-breakpoint-down(xl) {
+    border-radius: 15px;
+  }
+}
+.pd-common {
+  padding: 42px 30px 50px;
+  @include media-breakpoint-down(xl) {
+    padding: 35px 25px;
+  }
+  @include media-breakpoint-down(lg) {
+    padding: 25px;
+  }
+  @include media-breakpoint-down(md) {
+    padding: 20px;
+  }
+}
+.p-30 {
+  padding: 30px;
+  @include media-breakpoint-down(xl) {
+    padding: 20px;
+  }
+  @include media-breakpoint-down(md) {
+    padding: 15px;
+  }
+}
+.pb {
+  padding-bottom: 60px;
+  @include media-breakpoint-down(xl) {
+    padding-bottom: 40px;
+  }
+  @include media-breakpoint-down(lg) {
+    padding-bottom: 25px;
+  }
+}
+.mb-20 {
+  margin-bottom: 20px;
+  @include media-breakpoint-down(xl) {
+    margin-bottom: 12px;
+  }
+}
+.mt-20 {
+  margin-top: 20px;
+  @include media-breakpoint-down(xl) {
+    margin-top: 12px;
+  }
+}
+.mt-30 {
+  margin-top: 30px;
+  @include media-breakpoint-down(xl) {
+    margin-top: 20px;
+  }
+}
+.mb-30 {
+  margin-bottom: 30px;
+  @include media-breakpoint-down(xl) {
+    margin-bottom: 20px;
+  }
+}
+.px-30 {
+  padding: 30px 0;
+  @include media-breakpoint-down(xl) {
+    padding: 20px 0;
+  }
+  @include media-breakpoint-down(md) {
+    padding: 15px 0;
+  }
+}
+.text-primary {
+  color: color(500) !important;
+}
+.form-control {
+  border-color: #383838;
+  &:focus {
+    color: color(50);
+    box-shadow: none !important;
+    border-color: color(500);
+  }
+}
+textarea {
+  resize: none;
+}
+.text-success {
+  color: color(600) !important;
+}

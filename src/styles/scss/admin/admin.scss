@@ -1,0 +1,60 @@
+
+
+////////////////////////// DO NOT REMOVE BELOW ///////////////////////
+
+// SET RTL OPTION
+$rtl: false;
+
+// Included Global Variables and Functions
+@import "dashlite_variables";
+
+// Included Fonts
+/** 01. FONTS */
+@import "core/fonts/roboto";
+@import "core/fonts/nunito";
+
+// Included Bootstarp
+@import "extend/bootstrap/variables";
+@import "extend/bootstrap/bootstrap";
+@import "extend/bootstrap/extend";
+
+// Include Other Vendors
+@import "vendors/bundle";
+
+// Include Core Dashlite Style
+@import "core/style";
+
+////////////////////////// DO NOT REMOVE ABOVE ///////////////////////
+
+////// GLOBAL INCLUDED
+@import "global/style";
+
+//////  Apps
+
+// - Chats
+
+///////  PREVIEW PURPOSE 
+// @import "core/preview";			// Can be remove on real projoect 
+
+///////  UI/MODE OVERRIDE
+@import "core/mode-override";
+
+///////  DARK MODE SKIN
+@import "core/dark-skin";
+
+/*! END @iO */
+////////////////////////// custom css ///////////////////////
+
+//Components
+@import 'components/component.table';
+@import 'components/component.common';
+
+// modal
+
+
+//Pages
+@import 'pages/faq';
+@import 'pages/customer-details'; 
+@import 'pages/order-details'; 
+@import 'pages/myaccount'; 
+////////////////////////// END STYLESHEET ////////////////////////////

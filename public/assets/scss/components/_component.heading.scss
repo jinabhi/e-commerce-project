@@ -1,0 +1,127 @@
+.heading {
+  text-align: left;
+  &-text-1 {
+    color: color(380);
+    font-family: font(srg);
+    font-size: 141px;
+    margin-bottom: -60px;
+    text-transform: unset;
+  }
+  &-text-2 {
+    color: color(500);
+    font-family: font(lt);
+    font-size: 52px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  &-divider {
+    background-color: color(500);
+    width: 75px;
+    height: 2px;
+    border-radius: 2px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  &-meta-text-1 {
+    color: color(500);
+    font-size: 26px;
+    font-family: font(md);
+  }
+  &-meta-text-2 {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: white;
+  }
+  p {
+    font-size: 18px;
+    color: color(400);
+    line-height: 36px;
+  }
+
+  @include media-breakpoint-down(xxl) {
+    &-text-1 {
+      font-size: 75px;
+      margin-bottom: -34px;
+    }
+    &-text-2 {
+      font-size: 45px;
+    }
+    &-divider {
+      background-color: color(500);
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+    &-meta-text-1 {
+      color: color(500);
+      font-size: 20px;
+      font-family: font(md);
+    }
+    &-meta-text-2 {
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 16px;
+      color: color(400);
+      line-height: 24px;
+    }
+  }
+
+  @include media-breakpoint-down(xl) {
+    &-text-1 {
+      font-size: 60px;
+      margin-bottom: -34px;
+    }
+    &-text-2 {
+      font-size: 35px;
+    }
+    &-meta-text-1 {
+      color: color(500);
+      font-size: 18px;
+      font-family: font(md);
+    }
+    &-meta-text-2 {
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 15px;
+      color: color(400);
+      line-height: 24px;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    &-text-1 {
+      font-size: 45px;
+      margin-bottom: -20px;
+    }
+    &-text-2 {
+      font-size: 25px;
+    }
+    &-meta-text-1 {
+      color: color(500);
+      font-size: 16px;
+      font-family: font(md);
+    }
+    &-meta-text-2 {
+      font-size: 12px;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 14px;
+      color: color(400);
+      line-height: 24px;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    &-text-1 {
+      font-size: 45px;
+      margin-bottom: -20px;
+    }
+    &-text-2 {
+      font-size: 15px;
+    }
+  }
+}

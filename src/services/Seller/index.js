@@ -1,0 +1,10 @@
+export { SellerRegisterServices } from "./Register/index.service";
+export { SellerAuthServices } from "./Auth/index.service";
+export { SellerProductServices } from "./Product/index.service";
+export { SellerAccountServices } from "./Account/index.service";
+export { SellerDiscountServices } from "./DiscountsOffers/index.service";
+export { MorInventoryServices } from "./MorInventory/index.service";
+export { MyStoreServices } from "./MyStore/index.service";
+export { SellerManageCmsService } from "./ManageCms/index.service";
+export { EarningsServices } from "./Earnings/index.service";
+export { SellerDashboardServices } from "./Dashboard/index.service";

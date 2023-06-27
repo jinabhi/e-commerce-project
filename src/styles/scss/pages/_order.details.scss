@@ -1,0 +1,58 @@
+.orderDetails{
+    &_summary{
+        li{
+            line-height: 19px; color: color(300);
+            &:not(:last-child){
+                margin-bottom: 10px;
+            }
+            span{margin-left: auto;}
+        }
+    }
+    &_total{
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid #171717;
+        .subHeading {
+            span{
+                font-size: 14px; line-height: 18px; color: color(300);
+            }
+            &.amount{
+                color: color(500);
+                span{color: color(500); font-size: 16px;}
+            }
+        }
+        
+    }
+    &_items{
+        .orderItem{
+            max-width: 300px;
+        }
+    }
+    @include media-breakpoint-down(md){
+        &_summary{
+            li{
+                font-size: 14px;
+                &:not(:last-child){
+                    margin-bottom: 6px;
+                }
+            }
+        }
+        &_total{
+            margin-top: 10px;
+            padding-top: 10px;
+            .subHeading {
+                &.amount{
+                    span{font-size: 14px;}
+                }
+            }
+            
+        }
+    }
+    @include media-breakpoint-down(sm){
+        &_items{
+            .orderItem{
+                max-width: 100%;
+            }
+        }
+    }
+}

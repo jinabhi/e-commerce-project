@@ -1,0 +1,44 @@
+.faqCard{
+	.accordion-icon{
+		position: static;
+		transform: none;
+		cursor: pointer;
+		&.collapsed{
+			&:before{
+				content: "";
+			}
+		}
+	}
+	.action{
+		right: 1.5rem;
+		top: 50%;
+		transform: translateY(-50%);
+		position: absolute;
+		a{
+			color: #031c40;
+			font-size: 16px;
+			&:not(:last-child){
+				margin-right: 10px;
+			}
+			&:hover{
+				color: #031c40;
+			}
+		}
+	}
+	.accordion-head{
+		border-left: 0;
+		border-right: 0;
+		border-top: 0;
+		padding-right: 110px;
+		&:focus{
+			outline: none;
+		}
+	}
+	@media (max-width: 575px){
+		.action{
+			position: static;
+			justify-content: flex-end;
+			transform: none;
+		}
+	}
+}

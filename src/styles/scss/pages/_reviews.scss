@@ -1,0 +1,92 @@
+.reviewPage{
+    .rateBox{
+        h3{color:color(500); font-size: 80px; line-height: 97px; font-family: font(sb); margin: 0;}
+        p{font-size: 20px; font-family: font(md); line-height: 24px; color: color(300); margin: 0;}
+        .rateBox_rating{
+            margin: 17px 0 35px;
+            em{
+                font-size: 42px; 
+                &:not(:last-child) {
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+    &_listing{
+        max-height: 650px;
+        overflow: auto;
+        padding-right: 15px;
+        .reviewBox{
+            padding: 20px;
+            background: color(840);
+            border-radius: 15px;
+            &:not(:last-child){
+                margin-bottom: 20px;
+            }
+        }
+    }
+    @media (max-width: 1599px) {
+        .rateBox{
+            h3{font-size: 60px; line-height: 70px;}
+            p{font-size: 18px; line-height: 20px;}
+            .rateBox_rating{
+                margin: 10px 0 20px;
+                em{
+                    font-size: 35px; 
+                    &:not(:last-child) {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(xxl) {
+        .rateBox{
+            h3{font-size: 50px; line-height: 60px;}
+            p{font-size: 16px; line-height: 20px;}
+            .rateBox_rating{
+                em{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(xl) {
+        .rateBox{
+            h3{font-size: 40px; line-height: 50px;}
+            p{font-size: 14px; line-height: 18px;}
+            .rateBox_rating{
+                margin: 5px 0 15px;
+                em{
+                    font-size: 26px;
+                }
+            }
+        }
+        &_listing{
+            .reviewBox{
+                padding: 15px;
+                border-radius: 10px;
+                &:not(:last-child){
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        .rateBox{
+            h3{font-size: 30px; line-height: 40px;}
+            .rateBox_rating{
+                em{
+                    font-size: 22px;
+                }
+            }
+        }
+        &_listing{
+            margin-right: -15px;
+            .reviewBox{
+                padding: 12px;
+                border-radius: 6px;
+            }
+        }
+    }
+}

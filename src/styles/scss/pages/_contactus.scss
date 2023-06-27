@@ -1,0 +1,30 @@
+.contactus{
+    min-height: 650px;
+    &_img{
+        margin-top: 90px;
+    }
+    &_form{
+        max-width: 500px;
+        margin: 0 auto;
+        h5{
+            font-size: 20px;
+            font-family: font(md);
+            margin-bottom: 20px;
+        }
+        textarea.form-control{
+            height: 200px;
+        }
+    }
+    @include media-breakpoint-down(lg){
+        &_img{
+            margin: 30px 0;
+        }
+        &_form{
+            max-width: 100%;
+            h5{
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

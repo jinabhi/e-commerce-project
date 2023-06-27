@@ -1,0 +1,16 @@
+export { appLanguage as sellerLogin } from "./Login/index.i18n";
+export { appLanguage as sellerForgotPassword } from "./ForgetPassword/index.i18n";
+export { appLanguage as register } from "./Register/index.i18n";
+export { appLanguage as sellerChangePassword } from "./ChangePassword/index.i18n";
+export { appLanguage as sellerProfile } from "./Profile/index.i18n";
+export { appLanguage as sellerResetPassword } from "./ResetPassword/index.i18n";
+export { appLanguage as morInventory } from "./MorInventory/index.i18n";
+export { appLanguage as sellerProductDetails } from "./Products/index.i18n";
+export { appLanguage as sellerDiscountOffer } from "./DiscountsOffers/index.i18n";
+export { appLanguage as sellerMyStore } from "./MyStore/index.i18n";
+export { appLanguage as sellerOrders } from "./Orders/index.i18n";
+export { appLanguage as sellerDashboard } from "./Dashboard/index.i18n";
+export { appLanguage as earnings } from "./Earnings/index.i18n";
+export { appLanguage as sellerRatingReviews } from "./RatingReviews/index.i18n";
+export { appLanguage as sellerNotification } from "./Notification/index.i18n";
+export { appLanguage as sellerManageCms } from "./ManageCms/index.i18n";

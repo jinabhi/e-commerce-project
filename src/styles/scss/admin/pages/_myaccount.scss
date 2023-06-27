@@ -1,0 +1,16 @@
+.myAccount {
+  .formSection {
+    .editButton {
+      display: none;
+    }
+  }
+  .readOnly {
+    .editButton {
+      display: block;
+    }
+    .actionButton,
+    .filelabel {
+      display: block;
+    }
+  }
+}

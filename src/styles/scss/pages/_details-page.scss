@@ -1,0 +1,32 @@
+.detailsPage{
+    &_info{
+        .infoBox{
+            label{color:color(300); font-family: font(md); margin-bottom: 5px;}
+            h5{line-height: 24px; font-size: 20px; font-family: font(md); margin: 0; word-break: break-word;}
+        }
+    }
+    @media (max-width: 1599px) {
+        &_info{
+            .infoBox{
+                // label{margin-bottom: 5px;}
+                h5{line-height: 20px; font-size: 18px;}
+            }
+        }
+    }
+    @include media-breakpoint-down(xxl){
+        &_info{
+            .infoBox{
+                label{margin-bottom: 3px; font-size: 14px;}
+                h5{font-size: 16px;}
+            }
+        }
+    }
+    @include media-breakpoint-down(md){
+        &_info{
+            .infoBox{
+                label{font-size: 13px;}
+                h5{font-size: 14px;}
+            }
+        }
+    }
+}

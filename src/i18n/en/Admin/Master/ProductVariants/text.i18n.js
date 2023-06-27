@@ -1,0 +1,18 @@
+export const text = {
+  variants: "Variants",
+  variantName: "Variant Name",
+  variantNamePlaceholder: "Enter Variant Name",
+  attribute: "Attribute",
+  attributePlaceholder: "Enter Attributes Name",
+  productNo: "No. of Products",
+  pageTitle: "Product Variants",
+  serialNo: "S.No.",
+  action: "Actions",
+  createbtn: "Add New Variant",
+  addVariant: "Add New Variant",
+  attributeName: "Attribute Name",
+  submit: "Add",
+  msg: "Want to delete?",
+  edit: "Edit Variant",
+  attributeInfo: "Press enter to add more attribute",
+};

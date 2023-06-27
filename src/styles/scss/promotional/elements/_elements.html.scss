@@ -1,0 +1,29 @@
+html {
+  height: 100%;
+}
+body {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: font(rg);
+  background: color(900);
+  color: color(400);
+  // min-height: 100%;
+  position: relative;
+  @include media-breakpoint-down(sm) {
+    font-size: 14px;
+  }
+}
+a,
+.btn {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    @include transition(all 0.4s);
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

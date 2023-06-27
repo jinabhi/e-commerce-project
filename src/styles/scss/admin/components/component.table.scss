@@ -1,0 +1,98 @@
+// table
+.common-table {
+  .table {
+    td,
+    th {
+      vertical-align: middle;
+      white-space: nowrap;
+      &.w_70 {
+        width: 70px;
+        max-width: 115px;
+      }
+      &.w_80 {
+        width: 80px;
+      }
+      &.w_100 {
+        width: 100px;
+      }
+      &.w_120 {
+        width: 120px;
+      }
+      &.w_150 {
+        width: 150px;
+      }
+      &.w_160 {
+        width: 160px;
+      }
+      &.w_220 {
+        width: 220px;
+      }
+      &.w_250 {
+        width: 250px;
+      }
+      &.w_350 {
+        width: 350px;
+      }
+    }
+    .dropdown{
+      position: static;
+    }
+  }
+  .datatable-wrap {
+    max-width: 100%;
+    overflow-x: auto;
+    margin: 0 !important;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+  .dataTables{
+    &_filter{
+      label{
+        width: 100%;
+        max-width: 250px;
+      }
+    }
+    &_paginate{
+      ul.pagination {
+        li.active{
+          display: block !important;
+        }
+      }
+    }
+  }
+  .g-2 {
+    margin: 0 !important;
+    > div {
+      padding: 0 15px !important;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    .dataTables_filter,
+    .dataTables_length {
+      padding: 15px 0px;
+    }
+  }
+  .dataTables_paginate {
+    padding: 15px 0px;
+  }
+  .row {
+    margin: 0 !important;
+  }
+  .category-img {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    // border-radius: 8px;
+    img {
+      height: 100%;
+      width: 100%;
+      // object-fit: cover;
+      object-fit: contain;
+    }
+  }
+}
+.w_70 {
+  width: 70px;
+}

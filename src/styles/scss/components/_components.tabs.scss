@@ -1,0 +1,64 @@
+.commonTabs{
+    .nav-tabs{
+        margin-bottom: 40px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        .nav-item{
+            margin-right: 40px;
+            white-space: nowrap;
+        }
+        .nav-link{
+            color: color(350);
+            font-size: 20px;
+            font-family: font(md);
+            padding: 0;
+            padding-bottom: 12px;
+            border: none;
+            &.active{
+                color:color(500);
+                background-color: transparent;
+                border:none;
+                border-bottom: 2px solid color(500);
+            }
+            &:hover, &:focus{
+                border: none;
+                border-bottom: 2px solid color(500);
+                color: color(500);
+            }
+        }
+    }
+    @include media-breakpoint-down(xl){
+        .nav-tabs{
+            margin-bottom: 30px;
+            .nav-link{
+                font-size: 18px;
+                padding-bottom: 10px;
+            }
+            .nav-item{margin-right: 30px;}
+        }
+    }
+    @include media-breakpoint-down(lg){
+        .nav-tabs{
+            .nav-link{
+                font-size: 16px;
+            }
+            .nav-item{margin-right: 25px; }
+        }
+    }
+    @include media-breakpoint-down(md){
+        .nav-tabs{
+            margin-bottom: 20px;
+            .nav-link{font-size: 14px;}
+        }
+    }
+    @include media-breakpoint-down(sm){
+        .nav-tabs{
+            margin-bottom: 10px;
+            padding-bottom: 15px;
+            .nav-link{
+                padding-bottom: 5px;
+            }
+        }
+    }
+}

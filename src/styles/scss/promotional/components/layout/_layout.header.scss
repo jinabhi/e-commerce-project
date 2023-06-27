@@ -1,0 +1,56 @@
+.mainHeader {
+  .navbar {
+    transition: all 0.5s;
+    &.scrolled {
+      background: color(900);
+      .navbar-brand {
+        padding: 0;
+        margin-top: 15px;
+        height: 70px;
+        margin-bottom: 15px;
+        display: inline-block;
+      }
+    }
+    padding: 0;
+
+    &-brand {
+      padding: 0;
+      margin-top: 30px;
+      height: 112px;
+      display: inline-block;
+      transition: all 0.3s;
+      img {
+        height: 100%;
+      }
+    }
+
+    @include media-breakpoint-down(xl) {
+      &-brand {
+        padding: 0;
+        margin-top: 20px;
+        height: 90px;
+        display: inline-block;
+        transition: all 0.3s;
+        img {
+          height: 100%;
+        }
+      }
+    }
+    @include media-breakpoint-down(lg) {
+      &-brand {
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      &-brand {
+        height: 60px;
+      }
+      &.scrolled {
+        .navbar-brand {
+          height: 50px;
+        }
+      }
+    }
+  }
+}

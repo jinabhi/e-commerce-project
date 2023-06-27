@@ -1,0 +1,154 @@
+.btn {
+  cursor: pointer;
+  line-height: normal;
+  font-family: font(sb);
+  font-size: 16px;
+  padding: 15px 20px;
+  border-radius: 15px;
+  @include transition(all 0.4s);
+  em {
+    font-size: 20px;
+    margin-right: 15px;
+  }
+  &.w150 {
+    min-width: 150px;
+  }
+  &.w190 {
+    min-width: 190px;
+  }
+  &.w250 {
+    min-width: 250px;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+  &.disabled,
+  &:disabled {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+  &-primary {
+    border-color: color(500);
+    color: color(850);
+    background-color: color(500);
+    &:hover,
+    &:focus,
+    &:active,
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled).active:focus {
+      border-color: transparent;
+      background: rgba($color: color(500), $alpha: 0.9);
+      color: color(850);
+      outline: none;
+      box-shadow: none !important;
+    }
+    &.disabled,
+    &:disabled {
+      border-color: transparent;
+      color: color(850);
+    }
+    &-outline {
+      border-color: color(500);
+      color: color(500);
+      background-color: transparent;
+      &:hover,
+      &:focus,
+      &:active {
+        border-color: color(500);
+        color: color(850);
+        background-color: color(500);
+      }
+      &.disabled,
+      &:disabled {
+        border-color: color(500);
+        color: color(500);
+      }
+    }
+  }
+  &-icon {
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    em {
+      font-size: 20px;
+    }
+  }
+  &-gradiant {
+    background: -moz-linear-gradient(
+      80deg,
+      rgba(179, 134, 47, 1) 0%,
+      rgba(244, 227, 153, 1) 75%,
+      rgba(217, 189, 110, 1) 85%,
+      rgba(186, 143, 46, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      80deg,
+      rgba(179, 134, 47, 1) 0%,
+      rgba(244, 227, 153, 1) 75%,
+      rgba(217, 189, 110, 1) 85%,
+      rgba(186, 143, 46, 1) 100%
+    );
+    background: linear-gradient(
+      80deg,
+      rgba(179, 134, 47, 1) 0%,
+      rgba(244, 227, 153, 1) 75%,
+      rgba(217, 189, 110, 1) 85%,
+      rgba(186, 143, 46, 1) 100%
+    );
+    &:hover,
+    &:focus,
+    &:active,
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled).active:focus {
+      background: -moz-linear-gradient(
+        80deg,
+        rgba(179, 134, 47, 0.9) 0%,
+        rgba(244, 227, 153, 0.9) 75%,
+        rgba(217, 189, 110, 0.9) 85%,
+        rgba(186, 143, 46, 0.9) 100%
+      );
+      background: -webkit-linear-gradient(
+        80deg,
+        rgba(179, 134, 47, 0.9) 0%,
+        rgba(244, 227, 153, 0.9) 75%,
+        rgba(217, 189, 110, 0.9) 85%,
+        rgba(186, 143, 46, 0.9) 100%
+      );
+      background: linear-gradient(
+        80deg,
+        rgba(179, 134, 47, 0.9) 0%,
+        rgba(244, 227, 153, 0.9) 75%,
+        rgba(217, 189, 110, 0.9) 85%,
+        rgba(186, 143, 46, 0.9) 100%
+      );
+    }
+  }
+  @media screen and (max-width: 1699px) {
+    &.w190 {
+      min-width: 160px;
+    }
+  }
+  @include media-breakpoint-down(xl) {
+    padding: 12px 15px;
+    border-radius: 12px;
+  }
+  @include media-breakpoint-down(lg) {
+    font-size: 15px;
+    border-radius: 10px;
+    &.w190 {
+      min-width: 120px;
+    }
+    &.w150 {
+      min-width: 120px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 8px;
+    &.w190 {
+      min-width: 100px;
+    }
+  }
+}

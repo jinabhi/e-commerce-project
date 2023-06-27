@@ -1,0 +1,37 @@
+//Tools
+@import "tools/_tools.mixin.scss";
+
+//Settings
+@import "settings/settings.main";
+
+//generic
+@import "generic/generic.scroll";
+
+//Element
+@import "elements/elements.html";
+
+//Object
+@import "objects/objects.html";
+
+//Component
+@import "components/components.main";
+
+//Utilities
+@import "utilities/utilities.main";
+
+//Pages
+@import "pages/auth";
+@import "pages/account";
+@import "pages/dashboard";
+@import "pages/product";
+@import "pages/details-page";
+@import "pages/product.details";
+@import "pages/order.details";
+@import "pages/static-page";
+@import "pages/notification";
+@import "pages/contactus";
+@import "pages/how-it-works";
+@import "pages/reviews";
+@import "pages/view-shipping";
+@import "pages/earning";
+@import "pages/faq";

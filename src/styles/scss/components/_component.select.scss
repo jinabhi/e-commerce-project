@@ -1,0 +1,319 @@
+.ant-select {
+  // background: rgba($color: color(830), $alpha: 0.5);
+  background-color: transparent;
+  &-arrow {
+    color: rgba(255, 255, 255, 0.5) !important;
+  }
+  &-focused {
+    &:not(.ant-select-disabled) {
+      &.ant-select {
+        &:not(.ant-select-customize-input) {
+          .ant-select-selector {
+            border-color: #424242;
+            box-shadow: none !important;
+          }
+        }
+      }
+    }
+  }
+  &:not(.ant-select-customize-input) {
+    .ant-select-selection-search-input{
+      height: 100% !important;
+    }
+    .ant-select-selector {
+      position: relative;
+      background: rgba($color: color(830), $alpha: 0.5);
+      border-radius: 15px;
+      padding: 0px 15px !important;
+      border-color: color(360);
+      transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      height: 50px !important;
+      color: #fff;
+      font-size: 0.8125rem;
+      .ant-select-selection-placeholder {
+        font-size: 16px;
+        color: color(350);
+        line-height: initial;
+        display: flex;
+        align-items: center;
+      }
+      &:hover {
+        border-color: color(360);
+      }
+      // .form-control {
+      //   height: 75px;
+      //   width: 75px;
+      // }
+    }
+    &.ant-select-multiple {
+      .ant-select-selector {
+        height: auto !important;
+        min-height: 50px;
+      }
+    }
+  }
+  &-disabled:not(.ant-select-customize-input){
+    .ant-select-selector {
+      background: rgba($color: color(830), $alpha: 0.5) !important;
+    }
+  }
+  &-status-error{
+    &.ant-select:not(.ant-select-disabled):not(.ant-select-customize-input){
+      .ant-select-selector{background-color: transparent;}
+    }
+  }
+  &-open {
+    .ant-select-selector {
+      border-radius: 15px 15px 0px 0px !important;
+    }
+  }
+  &-dropdown {
+    background: #1c1c1c;
+    border: 1px solid #404040;
+    border-radius: 0px 0px 4px 4px;
+    padding: 6px;
+  }
+  &-dropdown {
+    padding: 0;
+  }
+  &-single {
+    &.ant-select-lg {
+      &:not(.ant-select-customize-input) {
+        .ant-select-selector {
+          .ant-select-selection-item {
+            line-height: 50px;
+            color: color(350);
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  &-item {
+    border-radius: 0px 4px 4px 0px;
+    color: color(350);
+    &-option {
+      &-selected {
+        color: color(50) !important;
+        background: color(900) !important;
+        .ant-select-selection-item {
+          line-height: 50px !important;
+          color: color(350);
+        }
+      }
+      &-active {
+        background-color: color(900) !important;
+        color: color(50) !important;
+        font-weight: 600 !important;
+      }
+    }
+  }
+  &-arrow {
+    right: 18px;
+    .anticon-down {
+      &:after {
+        font-family: "icomoon";
+        content: "\e91d";
+        font-size: 14px;
+        display: inline-block;
+        color: color(350);
+      }
+    }
+    svg {
+      fill: #fff !important;
+      &[data-icon="down"]{
+        display: none;
+      }
+    }
+  }
+  &-open{
+    .anticon-down {
+      transform: rotate(180deg) !important;
+    }
+  }
+  @include media-breakpoint-down(xxl) {
+    &:not(.ant-select-customize-input) {
+      .ant-select-selector {
+        height: 45px !important;
+        border-radius: 12px;
+      }
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    &:not(.ant-select-customize-input) {
+      .ant-select-selector {
+        height: 40px !important;
+        border-radius: 8px;
+      }
+    }
+    &-single {
+      &.ant-select-lg {
+        &:not(.ant-select-customize-input) {
+          .ant-select-selector {
+            .ant-select-selection-item {
+              line-height: 38px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// .select2 {
+//   width: 100% !important;
+//   &.select2-container {
+//     .select2-selection {
+//       border-radius: 15px;
+//       border-color: color(360);
+//       background: rgba($color: color(830), $alpha: 0.5);
+//       font-size: 16px;
+//       padding: 5px 15px;
+//       height: 50px;
+//       font-family: font(rg);
+//       display: flex;
+//       align-items: center;
+//       padding-right: 40px;
+//       .select2-selection__placeholder {
+//         color: color(350);
+//       }
+//       .select2-selection__rendered {
+//         color: color(350);
+//         font-size: 16px;
+//         font-family: font(rg);
+//         padding: 0;
+//       }
+//       .select2-selection__arrow {
+//         top: 50% !important;
+//         transform: translateY(-50%);
+//         right: 15px !important;
+//         text-align: center;
+//         height: auto;
+//         -webkit-transition: 0.5s;
+//         -o-transition: 0.5s;
+//         -moz-transition: 0.5s;
+//         transition: 0.5s;
+//         &:after {
+//           font-family: "icomoon";
+//           content: "\e91d";
+//           font-size: 14px;
+//           display: inline-block;
+//           color: color(350);
+//         }
+//         b {
+//           display: none;
+//         }
+//       }
+//       @include media-breakpoint-down(lg) {
+//         height: 40px;
+//         font-size: 14px;
+//         .select2-selection__rendered {
+//           font-size: 14px;
+//         }
+//       }
+//     }
+//     &.select2-container--open {
+//       .select2-selection__arrow {
+//         transform: translateY(-50%) rotate(180deg) !important;
+//       }
+//     }
+//     .select2-selection.select2-selection--multiple {
+//       min-height: 50px;
+//       height: auto;
+//       .select2-search__field {
+//         margin: 0;
+//       }
+//       .select2-selection__rendered {
+//         .select2-selection__choice {
+//           margin: 5px;
+//           padding: 5px;
+//           background: color(550);
+//           border-color: color(550);
+//           display: flex;
+//           color: color(100);
+//           span {
+//             order: 2;
+//             margin-left: 5px;
+//             font-size: 20px;
+//             &:hover {
+//               color: color(500);
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+//   &.select2-container--below.select2-container--open {
+//     .select2-selection.select2-selection--single {
+//       border-radius: 15px 15px 0 0;
+//     }
+//   }
+//   &.select2-container--above.select2-container--open {
+//     .select2-selection.select2-selection--single {
+//       border-radius: 0 0 15px 15px;
+//     }
+//   }
+//   @include media-breakpoint-down(xxl) {
+//     &.select2-container {
+//       .select2-selection.select2-selection--single {
+//         height: 45px;
+//         border-radius: 12px;
+//       }
+//     }
+//   }
+//   @include media-breakpoint-down(lg) {
+//     &.select2-container {
+//       .select2-selection.select2-selection--single {
+//         height: 40px;
+//         border-radius: 8px;
+//       }
+//       .select2-selection__rendered {
+//         font-size: 15px;
+//       }
+//       .select2-selection__arrow {
+//         right: 10px !important;
+//         &:after {
+//           font-size: 12px;
+//         }
+//       }
+//     }
+//   }
+// }
+// .select2-dropdown {
+//   border-color: color(360) !important;
+//   .select2-results {
+//     ul {
+//       background: #131313;
+//       li {
+//         padding: 5px 10px;
+//         font-family: font(rg);
+//         word-break: break-word;
+//         color: color(350);
+//         &:last-child {
+//           margin-bottom: 0;
+//         }
+//         @include media-breakpoint-down(lg) {
+//           font-size: 14px;
+//         }
+//       }
+//       .select2-results__option[aria-selected="true"] {
+//         background-color: color(900);
+//         color: color(50);
+//       }
+//       .select2-results__option--highlighted {
+//         background-color: color(900);
+//         color: color(50);
+//       }
+//     }
+//   }
+//   @include media-breakpoint-down(lg) {
+//     .select2-results {
+//       ul {
+//         background: #131313;
+//         li {
+//           font-size: 15px;
+//         }
+//       }
+//     }
+//   }
+// }

@@ -1,0 +1,55 @@
+.modal-dialog {
+  &.inventoryModal {
+    // .mb-30 { margin-bottom: 30px;}
+    .orderItem {
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+      &_img {
+        width: 100px;
+        height: 80px;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      &_info {
+        padding-top: 0;
+        padding-bottom: 0;
+
+        h3 {
+          font-size: 20px;
+          margin-bottom: 10px;
+          text-transform: capitalize;
+        }
+        h5 {
+          font-size: 16px;
+          color: color(300);
+        }
+        h6 {
+          font-size: 14px;
+          color: color(300);
+        }
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      .orderItem {
+        &_img {
+          width: 80px;
+          height: 60px;
+        }
+        &_info {
+          h3 {
+            font-size: 16px;
+            margin-bottom: 5px;
+          }
+          h5 {
+            font-size: 14px;
+          }
+          h6 {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

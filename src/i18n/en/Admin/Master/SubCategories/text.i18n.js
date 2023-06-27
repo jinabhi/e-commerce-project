@@ -1,0 +1,15 @@
+export const text = {
+  title: "Sub-Categories",
+  subCategoriesLogo: "Sub-Category Logo",
+  subCategoryName: "Sub-Category Name",
+  category: "Category",
+  noOfProducts: "No.of Products",
+  add: "Add New Sub Category",
+  update: "Edit Sub Category",
+  childImage: "Sub Category Image",
+  name: "Sub Category Name",
+  namePlaceholder: "Enter Sub Category Name",
+  categorySelect: "Category",
+  categorySelected: "Select Category",
+  image: "Sub Category Image",
+};

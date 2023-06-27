@@ -1,0 +1,31 @@
+.reviewBox{
+    img{width: 52px; height: 52px; border: 3px solid color(500); border-radius: 50%; object-fit: cover;}
+    &_info{
+        h2{font-size: 20px; line-height: 24px; font-family: font(md); margin-bottom: 6px;}
+        p{line-height: 19px; margin-bottom: 0; color:color(300); margin-top: 10px;}
+    }
+    &_title{
+        margin-top: 12px; font-size: 16px; line-height: 19px; font-family: font(md); margin-bottom: 0;
+    }
+    &_postedOn{
+        font-size: 12px; line-height: 15px; display: block; color: color(300); margin-top: 5px;
+    }
+    @include media-breakpoint-down(xxl){
+        &_info{
+            h2{font-size: 18px; line-height: 20px;}
+            p{margin-top: 6px;}
+        }
+        &_title{
+            margin-top: 8px;
+        }
+    }
+    @include media-breakpoint-down(lg){
+        &_info{
+            h2{font-size: 16px;}
+            p{font-size: 14px;}
+        }
+        &_title{
+            font-size: 14px;
+        }
+    }
+}

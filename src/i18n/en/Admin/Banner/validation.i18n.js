@@ -1,0 +1,15 @@
+export const validation = {
+  name: "Banner name is required",
+  bannerInput: "Banner name should be greater then 3 Characters",
+  bannerInputValid: "Banner name should be less then 24 Characters",
+  titleInput: "Title should be greater then 3 Characters",
+  titleInputValid: "Title should be less then 24 Characters",
+  descriptionInput: "Description should be greater then 3 Characters",
+  descriptionInputValid: "Description should be less then 50 Characters",
+  title: "Banner title is required",
+  image: "Image is required",
+  validName: "Please enter valid banner name",
+  validTitle: "Please enter valid banner title",
+  validDescription: "Please enter valid banner description",
+  description: "Banner description is required",
+};

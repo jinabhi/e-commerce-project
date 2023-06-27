@@ -1,0 +1,104 @@
+/**
+ * Bootstrap (https://getbootstrap.com/) 
+ */
+
+// @import "../../bootstrap/functions"; // @included from extend/bootstrap/variables for reuse functions
+// @import "../../bootstrap/variables"; // @included from extend/bootstrap/variables for callback
+
+/// RTL OVERRIDE NOTE
+/// '_override_base/**' related files/folder is used to over-ride based code which is rtl alternet purpose.
+
+@import "../../bootstrap/mixins";
+@import "../../bootstrap/root";
+
+// @import "../../bootstrap/reboot";
+@import "_override_base/reboot";				
+// @import "../../bootstrap/type
+@import "_override_base/type";					
+
+@import "../../bootstrap/images";
+// @import "../../bootstrap/code";
+@import "../../bootstrap/grid";
+@import "../../bootstrap/tables";
+
+// @import "../../bootstrap/forms";
+@import "_override_base/forms"; 				
+
+@import "../../bootstrap/buttons";
+@import "../../bootstrap/transitions";
+
+// @import "../../bootstrap/dropdown";
+@import "_override_base/dropdown"; 				
+// @import "../../bootstrap/button-group";
+@import "_override_base/button-group"; 			
+// @import "../../bootstrap/input-group";
+@import "_override_base/input-group"; 			
+// @import "../../bootstrap/custom-forms";
+@import "_override_base/custom-forms"; 			
+
+@import "../../bootstrap/nav";
+
+// @import "../../bootstrap/navbar";
+@import "_override_base/navbar";				
+// @import "../../bootstrap/card";
+@import "_override_base/card";					
+// @import "../../bootstrap/breadcrumb";
+@import "_override_base/breadcrumb";			
+// @import "../../bootstrap/pagination";
+@import "_override_base/pagination";			
+
+@import "../../bootstrap/badge";
+// @import "../../bootstrap/jumbotron";
+
+// @import "../../bootstrap/alert"; 
+@import "_override_base/alert";					
+
+// @import "../../bootstrap/progress";
+@import "../../bootstrap/media";
+
+// @import "../../bootstrap/list-group";
+// @import "_override_base/list-group";			
+// @import "../../bootstrap/close";
+@import "_override_base/close";					
+
+@import "../../bootstrap/toasts";
+
+// @import "../../bootstrap/modal";
+@import "_override_base/modal";					
+
+@import "../../bootstrap/tooltip";
+// @import "../../bootstrap/popover";
+// @import "../../bootstrap/carousel";
+@import "../../bootstrap/spinners";
+
+// @import "../../bootstrap/utilities"; // @separately loading as below
+
+@import "../../bootstrap/utilities/align";
+@import "../../bootstrap/utilities/background";
+// @import "../../bootstrap/utilities/borders";
+@import "_override_base/utilities/borders";								
+
+@import "../../bootstrap/utilities/clearfix";
+@import "../../bootstrap/utilities/display";
+// @import "../../bootstrap/utilities/embed";
+@import "../../bootstrap/utilities/flex";
+// @import "../../bootstrap/utilities/float";
+@import "_override_base/utilities/float";								
+
+// @import "../../bootstrap/utilities/interactions";
+@import "../../bootstrap/utilities/overflow";
+@import "../../bootstrap/utilities/position";
+@import "../../bootstrap/utilities/screenreaders";
+@import "../../bootstrap/utilities/shadows";
+@import "../../bootstrap/utilities/sizing";
+
+// @import "../../bootstrap/utilities/spacing";
+@import "_override_base/utilities/spacing";								
+
+@import "../../bootstrap/utilities/stretched-link";
+
+// @import "../../bootstrap/utilities/text";
+@import "_override_base/utilities/text";								
+
+@import "../../bootstrap/utilities/visibility";
+// @import "../../bootstrap/print";

@@ -1,0 +1,82 @@
+.pageHeading {
+  // background-image: url($imageurl + "/header-left-img.png"),
+  //   url($imageurl + "/header-right-img.png");
+
+  background-position: left top, right center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  background-size: contain;
+  min-height: auto;
+  position: relative;
+  ::after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#262b2e+0,000002+100 */
+    background: rgb(38, 43, 46); /* Old browsers */
+    background: -moz-linear-gradient(
+      left,
+      rgba(38, 43, 46, 1) 0%,
+      rgba(0, 0, 2, 1) 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      left,
+      rgba(38, 43, 46, 1) 0%,
+      rgba(0, 0, 2, 1) 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      to right,
+      rgba(38, 43, 46, 1) 0%,
+      rgba(0, 0, 2, 1) 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#262b2e', endColorstr='#000002',GradientType=1 ); /* IE6-9 */
+  }
+  &-text-2 {
+    color: #c8a452;
+    font-family: "MontserratLight";
+    margin-top: 200px;
+    margin-bottom: 85px;
+    font-size: 60px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  @include media-breakpoint-down(xxl) {
+    &-text-2 {
+      margin-top: 170px;
+      margin-bottom: 40px;
+      font-size: 50px;
+    }
+  }
+  @include media-breakpoint-down(xl) {
+    &-text-2 {
+      margin-top: 140px;
+      font-size: 40px;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    &-text-2 {
+      margin-top: 120px;
+      margin-bottom: 30px;
+      font-size: 30px;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    &-text-2 {
+      margin-top: 100px;
+      margin-bottom: 0px;
+      font-size: 20px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    background-image: none !important;
+  }
+  min-height: auto;
+  padding: 30px 15px !important;
+}

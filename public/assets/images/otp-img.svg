@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="563" height="563" viewBox="0 0 563 563">
+  <defs>
+    <filter id="Path_232" x="220.858" y="353.183" width="119.915" height="119.915" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-color="#f2e096" flood-opacity="0.149"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_268" data-name="Group 268" transform="translate(-84 -190)">
+    <circle id="Ellipse_5" data-name="Ellipse 5" cx="281.5" cy="281.5" r="281.5" transform="translate(84 190)" fill="#131313"/>
+    <rect id="Rectangle_2436" data-name="Rectangle 2436" width="90.154" height="22.539" rx="5" transform="translate(123.442 308.133)" fill="#ba8f2e"/>
+    <rect id="Rectangle_2437" data-name="Rectangle 2437" width="101.423" height="28.173" rx="5" transform="translate(84 358.056)" fill="#ba8f2e"/>
+    <rect id="Rectangle_2440" data-name="Rectangle 2440" width="101.423" height="28.173" rx="5" transform="translate(500.963 575.907)" fill="#ba8f2e"/>
+    <rect id="Rectangle_2438" data-name="Rectangle 2438" width="101.423" height="28.173" rx="5" transform="translate(134.712 414.075)" fill="#131313"/>
+    <rect id="Rectangle_2439" data-name="Rectangle 2439" width="101.423" height="28.173" rx="5" transform="translate(540.405 631.925)" fill="#ba8f2e"/>
+    <g id="Group_267" data-name="Group 267" transform="translate(253.031 250.947)">
+      <path id="Path_227" data-name="Path 227" d="M366.6,256.128h2.14V189.874c0-21.178,15.19-38.346,33.928-38.346h124.2c18.738,0,33.928,17.168,33.928,38.346V553.349c0,21.178-15.19,38.346-33.928,38.346h-124.2c-18.738,0-33.928-17.168-33.928-38.346V303.288H366.6Z" transform="translate(-351.979 -151.528)" fill="#858585"/>
+      <path id="Path_228" data-name="Path 228" d="M402.742,161.715h16.212a15.289,15.289,0,0,0,1.155,12.8,11.722,11.722,0,0,0,9.99,6.049H501.25a11.72,11.72,0,0,0,9.99-6.049,15.289,15.289,0,0,0,1.156-12.8h15.142c13.993,0,25.337,12.891,25.337,28.793V555.436c0,15.9-11.344,28.793-25.337,28.793h-124.8c-13.994,0-25.337-12.891-25.337-28.793h0V190.508c0-15.9,11.344-28.793,25.337-28.793Z" transform="translate(-353.422 -152.888)" fill="#fff"/>
+      <rect id="Rectangle_2427" data-name="Rectangle 2427" width="53.474" height="12.904" transform="translate(84.981 112.095)" fill="#ba8f2e"/>
+      <rect id="Rectangle_2428" data-name="Rectangle 2428" width="58.566" height="12.904" transform="translate(82.435 175.01)" fill="#e5e5e5"/>
+      <rect id="Rectangle_2429" data-name="Rectangle 2429" width="130.713" height="12.904" transform="translate(46.361 206.462)" fill="#e5e5e5"/>
+      <rect id="Rectangle_2430" data-name="Rectangle 2430" width="130.713" height="12.904" transform="translate(46.361 237.913)" fill="#e5e5e5"/>
+      <path id="Path_230" data-name="Path 230" d="M244.732,120.132l11.213-5.511-.382-.778-10.36,5.092-15.64-41-.809.309Z" transform="translate(-32.678 -0.546)" opacity="0.2"/>
+      <rect id="Rectangle_2431" data-name="Rectangle 2431" width="0.867" height="17.702" transform="translate(0 93.547) rotate(-69.778)" opacity="0.2"/>
+      <rect id="Rectangle_2432" data-name="Rectangle 2432" width="0.867" height="17.702" transform="translate(0 150.464) rotate(-69.778)" opacity="0.2"/>
+      <rect id="Rectangle_2433" data-name="Rectangle 2433" width="0.867" height="17.702" transform="translate(0 211.307) rotate(-69.778)" opacity="0.2"/>
+      <rect id="Rectangle_2434" data-name="Rectangle 2434" width="0.866" height="8.97" transform="translate(8.628 271.947) rotate(-64.361)" opacity="0.2"/>
+      <g transform="matrix(1, 0, 0, 1, -169.03, -60.95)" filter="url(#Path_232)">
+        <path id="Path_232-2" data-name="Path 232" d="M37.457,0A37.457,37.457,0,1,1,0,37.457,37.457,37.457,0,0,1,37.457,0Z" transform="translate(243.36 370.68)" fill="#ba8f2e"/>
+      </g>
+      <path id="Path_231" data-name="Path 231" d="M125.623,355.555l-11.21-14.416,6.519-5.07,5.308,6.825,17.933-18.931,6,5.682Z" transform="translate(-17.409 -3.484)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

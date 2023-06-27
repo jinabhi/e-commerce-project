@@ -1,0 +1,15 @@
+export const text = {
+  metaTitle: "MorLuxury - Buy American Luxury Beauty & Skin Care Products",
+  firstNamePlaceholder: "Enter your first name",
+  lastNamePlaceholder: "Enter your last name",
+  emailPlaceholder: "Enter your email",
+  companyUrlPlaceholder: "Enter your company website",
+  phoneNumberPlaceholder: "Enter your phone number",
+  phoneNumberTooltip: "Enter your phone number in (888)888-8888",
+  subjectPlaceholder: "Enter your subject",
+  messagePlaceholder: "Enter your message",
+  send: "Submit Now",
+  mobilePlaceholder: "Enter your mobile no.",
+  instagramUrlPlaceholder: "Instagram handle",
+  captchaCode: "Captcha code",
+};

@@ -1,0 +1,17 @@
+export const text = {
+  createbtn: "Create New ",
+  serialNo: "S.No.",
+  dateTime: "Date & Time",
+  userType: "User Type",
+  title: "Title",
+  description: "Description",
+  action: "Actions",
+  pageTitle: "Custom Notifications",
+  add: "Create New Notification",
+  submit: "Send",
+  titlePlaceholder: "Enter Title",
+  descriptionPlaceholder: "Write here ...",
+  msg: "Delete Notification",
+  confirmMsg: "Are you sure you want to delete notification?",
+  userTypePlaceholder: "Select User Type",
+};

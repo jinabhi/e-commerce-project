@@ -1,0 +1,80 @@
+// color variables
+$colors: (
+  50: #ffffff,
+  200: #b4b4b4,
+  300: #858585,
+  310: #545454,
+  330: #2b2b2b,
+  380: #3d3d3d,
+  400: #c1c1c1,
+  // 400: #9a9a9a,
+  410: #717171,
+  500: #c8a452,
+  850: #0d0d0d,
+  900: #000000,
+);
+
+@function color($color) {
+  // checking to see if our $theme-colors map has that $color key
+  @if map-has-key($colors, $color) {
+    // and if so, it will get that color for us in the map-get syntax
+    @return map-get($colors, $color);
+  }
+  // if not, it will give us a helpful error when we compile
+  @error "Unknown `#{$color}` in $colors.";
+  @return null;
+}
+
+// fonts
+$fonts: (
+  lt: "MontserratLight",
+  rg: "MontserratRegular",
+  md: "MontserratMedium",
+  sb: "MontserratSemiBold",
+  bd: "MontserratBold",
+  srg: "Sheila",
+  sbd: "SheilaBold",
+);
+
+@function font($font) {
+  // checking to see if our $theme-fonts map has that $font key
+  @if map-has-key($fonts, $font) {
+    // and if so, it will get that font for us in the map-get syntax
+    @return map-get($fonts, $font);
+  }
+  // if not, it will give us a helpful error when we compile
+  @error "Unknown `#{$font}` in $fonts.";
+  @return null;
+}
+
+// Badges
+$badgeColors: (
+  primary: (
+    clr: #c8a452,
+    bgClr: #61470d,
+  ),
+  success: (
+    clr: #37ed01,
+    bgClr: #183e0d,
+  ),
+  danger: (
+    clr: #fc9c9c,
+    bgClr: #3e0f0f,
+  ),
+  warning: (
+    clr: #ea7c27,
+    bgClr: #58351a,
+  ),
+  info: (
+    clr: #cab2f9,
+    bgClr: #391150,
+  ),
+);
+
+$imageurl: "./../../../images/promotional";
+$fonturl: "./../../../fonts/promotional";
+
+$success: green;
+$danger: red;
+$info: blue;
+$warning: orange;

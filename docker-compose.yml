@@ -1,0 +1,27 @@
+version: "3.3"
+services:
+  #React Service
+  react:
+    container_name: ${PROJECT_NAME}-reactapp
+    restart: unless-stopped
+    environment:
+      CHOKIDAR_USEPOLLING: "true"
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+      args:
+        - NODE_VERSION=${NODE_VERSION:-latest}
+        - DIRECTORY_PATH=$DIRECTORY_PATH
+    working_dir: $DIRECTORY_PATH
+    tty: true
+    volumes:
+      - .:$DIRECTORY_PATH
+    ports:
+      - ${NODE_PORT}:3000
+    networks:
+      - reactapp-network
+
+#Docker Networks
+networks:
+  reactapp-network:
+    driver: bridge

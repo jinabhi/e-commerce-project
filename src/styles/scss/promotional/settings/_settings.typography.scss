@@ -1,0 +1,8 @@
+@include font-face(font(lt), "#{$fonturl}/MontserratLight");
+@include font-face(font(rg), "#{$fonturl}/MontserratRegular");
+@include font-face(font(md), "#{$fonturl}/MontserratMedium");
+@include font-face(font(sb), "#{$fonturl}/MontserratSemiBold");
+@include font-face(font(bd), "#{$fonturl}/MontserratBold");
+
+@include font-face(font(srg), "#{$fonturl}/Sheila");
+@include font-face(font(sbd), "#{$fonturl}/SheilaBold");

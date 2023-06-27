@@ -1,0 +1,186 @@
+.myAccount {
+  .profile {
+    position: relative;
+    &_img {
+      margin-bottom: 30px;
+      img {
+        height: 170px !important;
+        width: 170px;
+        border: 8px solid color(500);
+        border-radius: 100px;
+        object-fit: cover;
+      }
+    }
+    h2 {
+      font-size: 30px;
+      font-family: font(md);
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 20px;
+      color: color(350);
+      font-family: font(md);
+      margin-bottom: 10px;
+    }
+    @media screen and (max-width: 1699px) {
+      h2 {
+        font-size: 26px;
+      }
+    }
+    @include media-breakpoint-down(xxl) {
+      &_img {
+        margin-bottom: 20px;
+        img {
+          width: 150px;
+          height: 150px !important;
+        }
+      }
+      h2 {
+        font-size: 24px;
+      }
+    }
+    @include media-breakpoint-down(xl) {
+      &_img {
+        img {
+          width: 140px;
+          height: 140px !important;
+        }
+      }
+      h2 {
+        font-size: 22px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+    @include media-breakpoint-down(lg) {
+      &_img {
+        margin-bottom: 15px;
+        img {
+          width: 130px;
+          height: 130px !important;
+        }
+      }
+      h2 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+    }
+    @include media-breakpoint-down(md) {
+      &_img {
+        img {
+          width: 120px;
+          height: 120px !important;
+          border-width: 5px;
+        }
+      }
+      h2 {
+        font-size: 18px;
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      &_img {
+        img {
+          width: 100px;
+          height: 100px !important;
+        }
+      }
+      h2 {
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+  &_left {
+    padding: 50px;
+    @media screen and (max-width: 1699px) {
+      padding: 40px;
+    }
+    @include media-breakpoint-down(xxl) {
+      padding: 30px;
+    }
+    @include media-breakpoint-down(md) {
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  &_right {
+    .filelabel {
+      width: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+      background: color(840);
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 6px;
+      right: 20px;
+      input {
+        display: none;
+      }
+      em {
+        color: color(350);
+        font-size: 20px;
+      }
+      &-license {
+        width: 58px;
+        height: 58px;
+        bottom: 25px;
+        left: auto;
+        right: 25px;
+        em {
+          color: color(50);
+          font-size: 22px;
+        }
+      }
+    }
+    .formSection {
+      .editButton {
+        display: none;
+      }
+    }
+    .readOnly {
+      .editButton {
+        display: block;
+      }
+    }
+    .store-img {
+      img {
+        border-radius: 15px;
+      }
+    }
+  }
+  @include media-breakpoint-down(xl) {
+    .filelabel {
+      width: 35px;
+      height: 35px;
+      em {
+        font-size: 14px;
+      }
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    .filelabel {
+      width: 32px;
+      height: 32px;
+      em {
+        font-size: 13px;
+      }
+    }
+  }
+  @include media-breakpoint-down(md) {
+    .filelabel {
+      width: 30px;
+      height: 30px;
+      right: 10px;
+    }
+  }
+}

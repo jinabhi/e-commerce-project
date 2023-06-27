@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+  <g id="Group_61383" data-name="Group 61383" transform="translate(-3 -3)">
+    <g id="compose_write_review_pencil" data-name="compose, write, review, pencil" transform="translate(3 3)">
+      <path id="Path_120890" data-name="Path 120890" d="M28.707,7.293l-4-4a1,1,0,0,0-1.414,0l-2,2a1,1,0,0,0,0,1.414L24.586,10l-9,9H13V16.414l6.7-6.7A1,1,0,1,0,18.289,8.3l-7,7A1,1,0,0,0,11,16v4a1,1,0,0,0,1,1h4a1,1,0,0,0,.707-.293l10-10,2-2a1,1,0,0,0,0-1.414ZM24,5.414,26.586,8,26,8.586,23.414,6Z" transform="translate(-6 -3)" fill="#fff"/>
+      <path id="Path_120891" data-name="Path 120891" d="M22.091,16.091a.909.909,0,0,0-.909.909v8.182H4.818V8.818H13A.909.909,0,1,0,13,7H3.909A.909.909,0,0,0,3,7.909V26.091A.909.909,0,0,0,3.909,27H22.091A.909.909,0,0,0,23,26.091V17A.909.909,0,0,0,22.091,16.091Z" transform="translate(-3 -4)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

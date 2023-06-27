@@ -1,0 +1,17 @@
+export const text = {
+  aboutUs: "About Us",
+  title: "Contact Us",
+  enterReason: "Enter Reason",
+  writeDescription: " Write Description",
+  placeEnterReason: "Enter Reason...",
+  placeEnterDescription: "Write here...",
+  faqs: "Faqs",
+  faq: "FAQs",
+  howItWorks: "How It Works",
+  privacyPolicy: "Privacy Policy",
+  lastUpdate: "Last updated on",
+  termsAndConditionTitle: " Terms & Conditions",
+  noRecordFound: "no record found",
+  returnsRefundPolicy: "Returns & Refund Policy",
+  cancellationPolicy: "Cancellation Policy",
+};

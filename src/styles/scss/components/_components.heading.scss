@@ -1,0 +1,30 @@
+.common-heading{
+    padding: 30px 0;
+    &_title{
+        font-size: 30px;
+        font-family: font(sb);
+        margin: 0;
+    }
+    @media (max-width:1599px){
+        padding: 25px 0;
+        &_title{
+            font-size: 26px;
+        }
+    }
+    @include media-breakpoint-down(xxl){
+        &_title{
+            font-size: 24px;
+        }
+    }
+    @include media-breakpoint-down(lg){
+        padding: 20px 0;
+        &_title{
+            font-size: 20px;
+        }
+    }
+    @include media-breakpoint-down(sm){
+        &_title{
+            font-size: 18px;
+        }
+    }
+}

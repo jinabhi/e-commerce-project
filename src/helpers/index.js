@@ -1,0 +1,9 @@
+export const classicDateFormat = "DD/MM/YYYY";
+export const dateFormatWithMonth = "DD MMM YYYY";
+export const dateTimeFormatWithMonth = "DD MMM YYYY, hh:mm a";
+export const timeFormatA = "hh:mm A";
+export const classicDataTimeFormate = "DD/MM/YYYY, hh:mm A";
+export const dateWithString = "d MMM YYYY";
+export const dateAndTimeFormateWithSlash = "DD/MMM/YYYY, hh:mm a";
+export const dateFormateWithSlash = "YYYY-MM-DD";
+export const payloadDateTimeFormat = "YYYY-MM-DD HH:mm:ss";

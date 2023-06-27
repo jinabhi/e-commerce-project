@@ -1,0 +1,108 @@
+.addProduct {
+  &_trash {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    &.sqr_img {
+      img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 10px;
+        aspect-ratio: 1/1;
+      }
+    }
+    img {
+      // width: 120px;
+      // height: 120px;
+      // object-fit: cover;
+      // border-radius: 10px;
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      aspect-ratio: 1.2/1;
+    }
+    .imgtrash {
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      background: rgba($color: color(350), $alpha: 0.6);
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      em {
+        color: color(50);
+      }
+    }
+    .videoPreview {
+      width: 120px;
+      height: 120px;
+      border-radius: 10px;
+      border: 1px solid #555555;
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      p {
+        @include text-clamp();
+      }
+    }
+  }
+  .videoPreview {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    border: 1px solid #555555;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+  }
+  &_heading{
+    color: color(50);
+  }
+  &_bulkupload {
+    max-width: 375px;
+  }
+  @include media-breakpoint-down(lg) {
+    &_bulkupload {
+      max-width: 320px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    &_trash {
+      margin-right: 12px;
+      margin-bottom: 12px;
+      img {
+        width: 100px;
+        height: 100px;
+      }
+      .imgtrash {
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        background: rgba($color: color(350), $alpha: 0.6);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        em {
+          color: color(50);
+        }
+      }
+    }
+    &_bulkupload {
+      max-width: 280px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    &_bulkupload {
+      max-width: 240px;
+    }
+  }
+}

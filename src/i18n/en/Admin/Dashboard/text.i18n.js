@@ -1,0 +1,17 @@
+export const text = {
+  pageTitle: "Dashboard",
+  name: "Dashboard",
+  visitOrderTitle: "User Visits Vs. Orders",
+  earningsTitle: "Earnings",
+  registeredUsersTitle: "Registered Users",
+  topSellingTitle: "Top Selling Categories & Products",
+  categoriesTitle: "Categories",
+  productsTitle: "Products",
+  totalCustomer: "Total Customer",
+  totalSellers: "Total Sellers",
+  totalProducts: "Total Products",
+  totalEarnings: "Total Earnings",
+  activeOrders: "Active Orders",
+  completedOrders: "Completed Orders",
+  cancelledOrders: "Cancelled Orders",
+};

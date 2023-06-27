@@ -1,0 +1,101 @@
+/// Dropdowns
+///////////////////////////
+.ant-select {
+  &:hover {
+    .ant-select-selector {
+      border-color: #404040 !important;
+    }
+  }
+  &-focused {
+    .ant-select-selector {
+      box-shadow: 0 0 0 3px rgba(#c8a452, 0.1) !important;
+      border-color: #404040 !important;
+    }
+  }
+  &:not(.ant-select-customize-input) {
+    .ant-select-selector {
+      position: relative;
+      background-color: transparent;
+      border-radius: 4px;
+
+      border: 1px solid #424242;
+      transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      height: calc(2.125rem + 2px) !important;
+      color: #fff;
+      font-size: 0.8125rem;
+    }
+  }
+  &-open {
+    border-radius: 4px 4px 0px 0px !important;
+  }
+  &-dropdown {
+    background: #1c1c1c;
+    border: 1px solid #404040;
+    border-radius: 0px 0px 4px 4px;
+    padding: 6px;
+  }
+  &-item {
+    border-radius: 0px 4px 4px 0px;
+    color: #b6c6e3;
+    &-option {
+      &-selected {
+        color: #fff !important;
+        background: #0d0d0d !important;
+      }
+      &-active {
+        &.ant-select-item-option-selected {
+          color: #fff !important;
+          background: #0d0d0d !important;
+        }
+      }
+    }
+  }
+  &-item-option-active {
+    background: #0d0d0d !important;
+  }
+  &-arrow {
+    svg {
+      fill: #fff !important;
+    }
+  }
+}
+
+.nk-notification {
+  .dropdown-menu & {
+    max-height: 239px;
+    overflow: auto;
+  }
+  &-item {
+    display: flex;
+    align-items: center;
+    padding: 1.25rem 1.75rem;
+  }
+  &-icon {
+    flex-shrink: 0;
+    @if ($rtl==false) {
+      margin-right: 0.75rem;
+    }
+    @if ($rtl==true) {
+      margin-left: 0.75rem;
+    }
+  }
+  &-text {
+    font-size: $fx-sz-13;
+    color: $base-text;
+    span {
+      color: $base-color;
+    }
+  }
+  &-time {
+    font-size: $fx-sz-11;
+    color: $base-light;
+  }
+}
+
+.nk-chat-list,
+.chat-list {
+  .dropdown-menu & {
+    max-height: 274px;
+    overflow: auto;
+  }
+}

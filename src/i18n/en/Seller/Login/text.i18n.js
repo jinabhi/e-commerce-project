@@ -1,0 +1,16 @@
+export const text = {
+  loginTitle: "Login",
+  loginHeading: "Log In",
+  email: "Email Address / Mobile Number",
+  emailPlaceholder: "Enter Email Address / Mobile Number",
+  password: "Password",
+  passwordPlaceholder: "Enter Password",
+  rememberMe: "Remember Me",
+  forgotPasswordLink: "Forgot Password?",
+  loginDescription: "Please log in to your account",
+  submit: "Login",
+  register: "Register",
+  registerDescription: "Don't have an Account?",
+  verificationPending: "Verification Pending",
+  okay: "Okay",
+};

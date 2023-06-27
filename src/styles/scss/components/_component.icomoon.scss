@@ -1,0 +1,160 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("#{$fonturl}/icomoon.eot?p6g88m");
+  src: url("#{$fonturl}/icomoon.eot?p6g88m#iefix") format("embedded-opentype"),
+    url("#{$fonturl}/icomoon.ttf?p6g88m") format("truetype"),
+    url("#{$fonturl}/icomoon.woff?p6g88m") format("woff"),
+    url("#{$fonturl}/icomoon.svg?p6g88m#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-star-half:before {
+  content: "\e92b";
+}
+.icon-video-camera:before {
+  content: "\e92a";
+}
+.icon-arrow-prev:before {
+  content: "\e929";
+}
+.icon-filter:before {
+  content: "\e928";
+}
+.icon-vertical-toggle:before {
+  content: "\e927";
+}
+.icon-bulk-upload:before {
+  content: "\e91f";
+}
+.icon-buy:before {
+  content: "\e920";
+}
+.icon-download:before {
+  content: "\e921";
+}
+.icon-graph:before {
+  content: "\e922";
+}
+.icon-list-view:before {
+  content: "\e923";
+}
+.icon-search:before {
+  content: "\e924";
+}
+.icon-star:before {
+  content: "\e925";
+}
+.icon-star-outline:before {
+  content: "\e926";
+}
+.icon-trash:before {
+  content: "\e91e";
+}
+.icon-down-arrow:before {
+  content: "\e91d";
+}
+.icon-shade:before {
+  content: "\e91c";
+}
+.icon-arrow:before {
+  content: "\e91b";
+}
+.icon-chevron-left:before {
+  content: "\e91a";
+}
+.icon-chevron-right:before {
+  content: "\e917";
+}
+.icon-link:before {
+  content: "\e918";
+}
+.icon-calendar:before {
+  content: "\e919";
+}
+.icon-verified:before {
+  content: "\e916";
+}
+.icon-close:before {
+  content: "\e914";
+}
+.icon-notification:before {
+  content: "\e915";
+}
+.icon-eye-off:before {
+  content: "\e90e";
+}
+.icon-clock:before {
+  content: "\e904";
+}
+.icon-eye:before {
+  content: "\e913";
+}
+.icon-check:before {
+  content: "\e903";
+}
+.icon-accessories:before {
+  content: "\e900";
+}
+.icon-arrow-left:before {
+  content: "\e901";
+}
+.icon-camera:before {
+  content: "\e902";
+}
+.icon-clothing:before {
+  content: "\e905";
+}
+.icon-clutches:before {
+  content: "\e906";
+}
+.icon-dropdown:before {
+  content: "\e907";
+}
+.icon-edit:before {
+  content: "\e908";
+}
+.icon-eyewear:before {
+  content: "\e909";
+}
+.icon-footwear:before {
+  content: "\e90a";
+}
+.icon-haircare:before {
+  content: "\e90b";
+}
+.icon-handbags:before {
+  content: "\e90c";
+}
+.icon-makeup:before {
+  content: "\e90d";
+}
+.icon-perfumes:before {
+  content: "\e90f";
+}
+.icon-skincare:before {
+  content: "\e910";
+}
+.icon-travelling:before {
+  content: "\e911";
+}
+.icon-watches:before {
+  content: "\e912";
+}
